@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>AI Generator</h1>
+
+    <h2>Train Generators</h2>
+    <form id="trainPhotoForm">
+        <label for="photoData">Photo Training Data:</label>
+        <textarea id="photoData" name="photoData"></textarea>
+        <button type="button" onclick="trainPhoto()">Train Photo</button>
+    </form>
+
+    <form id="trainVideoForm">
+        <label for="videoData">Video Training Data:</label>
+        <textarea id="videoData" name="videoData"></textarea>
+        <button type="button" onclick="trainVideo()">Train Video</button>
+    </form>
+
+    <form id="trainChatForm">
+        <label for="chatData">Chat Training Data:</label>
+        <textarea id="chatData" name="chatData"></textarea>
+        <button type="button" onclick="trainChat()">Train Chat</button>
+    </form>
+
+    <h2>Generate Content</h2>
+    <form id="generatePhotoForm">
+        <label for="photoDescription">Photo Description:</label>
+        <input type="text" id="photoDescription" name="photoDescription">
+        <button type="button" onclick="generatePhoto()">Generate Photo</button>
+    </form>
+
+    <form id="generateVideoForm">
+        <label for="videoDescription">Video Description:</label>
+        <input type="text" id="videoDescription" name="videoDescription">
+        <button type="button" onclick="generateVideo()">Generate Video</button>
+    </form>
+
+    <form id="generateChatForm">
+        <label for="chatPrompt">Chat Prompt:</label>
+        <input type="text" id="chatPrompt" name="chatPrompt">
+        <button type="button" onclick="generateChat()">Generate Chat</button>
+    </form>
+
+    <h2>Manage Data</h2>
+    <button type="button" onclick="downloadData()">Download Data</button>
+    <button type="button" onclick="uploadData()">Upload Data</button>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
